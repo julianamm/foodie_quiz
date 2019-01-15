@@ -1,0 +1,41 @@
+body {
+  padding: 10px;
+  font: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.jumbotron {
+  background: rgb(200, 54, 54);
+  background: rgba(200, 54, 54, 0.3); 
+  
+}
+
+h1 {
+  color: #FFFAF0;
+  font-family: 'Bowlby One SC', cursive;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.name_input_form {
+  width: 60%;
+}
+
+.quiz-text {
+  color: #FFFAF0;
+}
+
+.results-page {
+  background: rgb(84, 69, 24);
+  opacity: 0.5;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+}
+

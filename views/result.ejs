@@ -1,0 +1,16 @@
+<%- include("./partials/header") %>
+
+<div style="margin-top: 90px;">
+<div class="mb-4">
+<a class="btn btn-outline-warning" href="/">Go back to Welcome Page</a>
+<a class="btn btn-outline-warning" href="/quiz">Retake the Quiz</a>
+</div>
+
+<div class="jumbotron results-page">
+    <h1><%= cookie_name %></h1>
+    <h2><%= finalResults.percent_score%>%</h2>
+    <h3><%= finalResults.grade%></h3>
+</div>
+</div>
+
+<%- include("./partials/footer") %>

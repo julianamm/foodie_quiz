@@ -1,0 +1,228 @@
+<%- include("./partials/header") %>
+<div class="wrapper">
+    <div class="">
+    <h1>Hi <%= cookie_name %></h1>
+    </div>
+    <div class="jumbotron" style = "width:60%">
+    
+        <form class="quiz-text" action="/quiz" method="POST">
+
+            <div class="form-group m-4">
+            <label>Peanuts can be used to make dynamite?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt1" id="sample1" value="opt1">
+                    <label class="form-check-label" for="sample1">
+                    true
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt1" id="sample2" value="opt2">
+                    <label class="form-check-label" for="sample2">
+                    false
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group m-4">
+                <label>The man who invented cotton candy was a dentist?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt2" id="sample3" value="opt1">
+                    <label class="form-check-label" for="sample3">
+                    True
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt2" id="sample4" value="opt2">
+                    <label class="form-check-label" for="sample4">
+                    False
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group m-4">
+            <label>Avocados contain almost no calories?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt3" id="sample7" value="opt1">
+                    <label class="form-check-label" for="sample7">
+                    true
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt3" id="sample8" value="opt2">
+                    <label class="form-check-label" for="sample8">
+                    false
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group m-4">
+            <label>Lobsters were once considered the poor man’s chicken?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt4" id="sample9" value="opt1">
+                    <label class="form-check-label" for="sample9">
+                    true
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt4" id="sample10" value="opt2">
+                    <label class="form-check-label" for="sample10">
+                    false
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group m-4">
+            <label>Parmesan is made from goat milk?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt5" id="sample11" value="opt1">
+                    <label class="form-check-label" for="sample11">
+                    true
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt5" id="sample12" value="opt2">
+                    <label class="form-check-label" for="sample12">
+                    false
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group m-4">
+            <label>The tea bag was introduced by mistake?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt6" id="sample13" value="opt1">
+                    <label class="form-check-label" for="sample13">
+                    true
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="qt6" id="sample14" value="opt2">
+                    <label class="form-check-label" for="sample14">
+                    false
+                    </label>
+                </div>
+                
+            </div>
+
+            
+            <div class="form-group m-4">
+                <label>Cappuccino consists of...</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt7" value="opt1" id="sample15">
+                    <label class="form-check-label" for="sample15">
+                    Coffee
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt7" value="opt2" id="sample16">
+                    <label class="form-check-label" for="sample16">
+                    Milk
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt7" value="opt3" id="sample17">
+                    <label class="form-check-label" for="sample17">
+                    Cocoa
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt7" value="opt4" id="sample18">
+                    <label class="form-check-label" for="sample18">
+                    Foam
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group m-4">
+                <label>Mark all the TRUE statements about wine.</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt8" value="opt1" id="sample19">
+                    <label class="form-check-label" for="sample19">
+                    Every wine improves your health
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt8" value="opt2" id="sample20">
+                    <label class="form-check-label" for="sample20">
+                    Wine names usually indicate location or grape varieties
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt8" value="opt3" id="sample21">
+                    <label class="form-check-label" for="sample21">
+                    Wine doesn’t make you fat
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt8" value="opt4" id="sample22">
+                    <label class="form-check-label" for="sample22">
+                    Wine was discovered about 6,000 years ago in the France
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group m-4">
+                <label>Mark all the TRUE statements about chocolate.</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt9" value="opt1" id="sample23">
+                    <label class="form-check-label" for="sample23">
+                    Chocolate is an aphrodisiac
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt9" value="opt2" id="sample24">
+                    <label class="form-check-label" for="sample24">
+                    Chocolate is high in caffeine
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt9" value="opt3" id="sample25">
+                    <label class="form-check-label" for="sample25">
+                    Chocolate was used as money
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt9" value="opt4" id="sample26">
+                    <label class="form-check-label" for="sample26">
+                    The chocolate chip cookie was an accident
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group m-4">
+                <label>Mark the TRUE statements about beer.</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt10" value="opt1" id="sample27">
+                    <label class="form-check-label" for="sample27">
+                    Beer can prevent kidney stones
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt10" value="opt2" id="sample28">
+                    <label class="form-check-label" for="sample28">
+                    Beer makes you smarter
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt10" value="opt3" id="sample29">
+                    <label class="form-check-label" for="sample29">
+                    Craft breweries are small breweries.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name= "qt10" value="opt4" id="sample30">
+                    <label class="form-check-label" for="sample30">
+                    Beer can strengthens your bones
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group m-4">
+                <input type="submit" class="btn btn-warning" value="Submit">
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+<%- include("./partials/footer") %>

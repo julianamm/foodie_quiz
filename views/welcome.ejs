@@ -1,0 +1,29 @@
+<%- include("./partials/header") %>
+    <div class="jumbotron vertical-center">
+        <div class="container text-center">
+            <h1 class="display-4">Are you a food lover?</h1>
+            <p class="">Take this quiz!</p>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <form action="/form_welcome" method="POST">
+            <div class="form-group">
+                <div class="name_input_form">
+                    <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    name="name"
+                    placeholder="Type your first name here"
+                    style = "width:400px"
+                    />
+                </div>
+            </div>
+            <input type="submit" class="btn btn-warning font-weight-bold" value="Submit">
+        </form>
+    </div>
+
+        
+
+    
+<%- include("./partials/footer") %>
